@@ -235,6 +235,35 @@ http://162.55.220.72:5005/object_info_3?name=Alexander&age=30&salary=1200
 
 >Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
 
+    {
+        "age": "30",
+        "family": {
+            "children": [
+                [
+                    "Alex",
+                    24
+                ],
+                [
+                    "Kate",
+                    12
+                ]
+            ],
+            "pets": {
+                "cat": {
+                    "age": 3,
+                    "name": "Sunny"
+                },
+                "dog": {
+                    "age": 4,
+                    "name": "Luky"
+                }
+            },
+            "u_salary_1_5_year": 4800
+        },
+        "name": "Alexander",
+        "salary": 1200
+    }
+
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oxslYkVZNb-gU9uhtrEhBPnvCnDNPDDc-niVh_KPIJWIwrYLeYval5IA37b7ZCBHcjaGMdqO3fdUsl7VERDMHSkRcM=s1600)
 
 ----
