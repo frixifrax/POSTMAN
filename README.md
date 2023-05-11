@@ -122,6 +122,7 @@ salary|500
               'daily_food': weight * 0.012,
               'daily_sleep': weight * 2.5}
 
+----
 
 ### EP_4
 
@@ -142,6 +143,9 @@ salary|500
                          'u_age': age,
                          'u_salary_5_years': salary * 4.2}
               }
+
+
+----
 
 ### EP_5
 
@@ -164,6 +168,9 @@ salary|500
                          'u_salary_1_5_year': salary * 4}
               }
 
+
+----
+
 ### EP_6
 
     Method: GET
@@ -177,6 +184,9 @@ salary|500
     {'name': name,
               'age': int(age),
               'salary': [salary, str(salary * 2), str(salary * 3)]}
+   
+----
+
 
 ### EP_7
 
@@ -197,5 +207,6 @@ salary|500
                          'u_age': age,
                          'u_salary_5_years': salary * 4.2}
               }
-              
-              
+
+
+----
