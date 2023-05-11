@@ -221,6 +221,7 @@ http://162.55.220.72:5005/object_info_2?name=Ivan&age=35&salary=1000
                          'u_salary_1_5_year': salary * 4}
               }
 
+123
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oxslYkVZNb-gU9uhtrEhBPnvCnDNPDDc-niVh_KPIJWIwrYLeYval5IA37b7ZCBHcjaGMdqO3fdUsl7VERDMHSkRcM=s1600)
 ----
 
