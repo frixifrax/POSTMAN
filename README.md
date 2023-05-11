@@ -221,8 +221,22 @@ http://162.55.220.72:5005/object_info_2?name=Ivan&age=35&salary=1000
                          'u_salary_1_5_year': salary * 4}
               }
 
-123
+Отправим этот запрос методом **GET** в эндпоинт **/object_info_3**
+
+В параметрах 
+
+Key|Value
+|----|----|
+name|Alexander
+age|30
+salary|1200
+
+http://162.55.220.72:5005/object_info_3?name=Alexander&age=30&salary=1200
+
+>Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
+
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oxslYkVZNb-gU9uhtrEhBPnvCnDNPDDc-niVh_KPIJWIwrYLeYval5IA37b7ZCBHcjaGMdqO3fdUsl7VERDMHSkRcM=s1600)
+
 ----
 
 ### EP_6
