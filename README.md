@@ -122,6 +122,26 @@ salary|500
               'daily_food': weight * 0.012,
               'daily_sleep': weight * 2.5}
 
+Отправим этот запрос методом **GET** в эндпоинт **/object_info_1**
+
+В параметрах 
+
+Key|Value
+|----|----|
+name|Kevin
+age|40
+weight|100
+
+>Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
+>
+    {
+        "age": 40,
+        "daily_food": 1.2,
+        "daily_sleep": 250.0,
+        "name": "Kevin"
+    }
+
+![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81otj7XFNDO8GTspqDrUavprlGUVq2GkddXJ-NgqCrwZ5i0LdD65iSExu7H7oKGzhiuXbrehuqC1SUXsMzBgxt3d0ckpaA=s2560)
 ----
 
 ### EP_4
@@ -144,7 +164,7 @@ salary|500
                          'u_salary_5_years': salary * 4.2}
               }
 
-
+![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oiwwLiKYKwJSNzKnP5IxnnmVl9zMCiyxoO9QAtbf2vyZjOV4mDqc5Ao40u6hCcyO2jB1exQNdKzhwlmIP_i7r0WRV6=s1600)
 ----
 
 ### EP_5
@@ -168,7 +188,7 @@ salary|500
                          'u_salary_1_5_year': salary * 4}
               }
 
-
+![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oxslYkVZNb-gU9uhtrEhBPnvCnDNPDDc-niVh_KPIJWIwrYLeYval5IA37b7ZCBHcjaGMdqO3fdUsl7VERDMHSkRcM=s1600)
 ----
 
 ### EP_6
@@ -184,7 +204,8 @@ salary|500
     {'name': name,
               'age': int(age),
               'salary': [salary, str(salary * 2), str(salary * 3)]}
-   
+
+![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81ols3Q-uqrhMFcDRAT9tTe4FFGqzLrNl6EE1uWAQMvp4OU5HhhbqXjnLivfRAgJAdUZ344XTCyM-cGJxNWjEmfWylWhIg=s2560)
 ----
 
 
@@ -208,5 +229,5 @@ salary|500
                          'u_salary_5_years': salary * 4.2}
               }
 
-
+![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81q01CYsr1o40kNjTR4jLLfsCjiQ43R-QbHCrKZNFHjC5_ETZFDLcerSMU-fOxdv2SOrha_yEYSy5yGE4mBSAmsN6G1z8Q=s2560)
 ----
