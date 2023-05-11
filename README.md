@@ -132,6 +132,8 @@ name|Kevin
 age|40
 weight|100
 
+http://162.55.220.72:5005/object_info_1?name=Kevin&age=40&weight=100
+
 >Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
 >
     {
@@ -163,6 +165,37 @@ weight|100
                          'u_age': age,
                          'u_salary_5_years': salary * 4.2}
               }
+              
+Отправим этот запрос методом **GET** в эндпоинт **/object_info_2**
+
+В параметрах 
+
+Key|Value
+|----|----|
+name|Ivan
+age|35
+salary|1000
+
+http://162.55.220.72:5005/object_info_2?name=Ivan&age=35&salary=1000
+
+>Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
+>          
+    {
+        "person": {
+            "u_age": 35,
+            "u_name": [
+                "Ivan",
+                1000,
+                35
+            ],
+            "u_salary_5_years": 4200.0
+        },
+        "qa_salary_after_1.5_year": 3300.0,
+        "qa_salary_after_12_months": 2700.0,
+        "qa_salary_after_3.5_years": 3800.0,
+        "qa_salary_after_6_months": 2000,
+        "start_qa_salary": 1000
+    }
 
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81oiwwLiKYKwJSNzKnP5IxnnmVl9zMCiyxoO9QAtbf2vyZjOV4mDqc5Ao40u6hCcyO2jB1exQNdKzhwlmIP_i7r0WRV6=s1600)
 ----
