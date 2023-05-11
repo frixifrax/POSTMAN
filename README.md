@@ -22,8 +22,8 @@
         “Str”
     ]
 
-Для того, чтобы создать запрос, выбираем `Add request` в типе метода выбираем **GET**, в строке адреса указываем адрес порт и требуемый эндпоинт **/get_method**. 
-Таким образом мы будем отправлять запрос по адресу: 
+Для того, чтобы создать запрос, нужно нажать `Add request` в типе метода выбрать **GET**, в строке адреса указать адрес порт и требуемый эндпоинт **/get_method**. 
+Таким образом запрос будет отправлен по адресу: 
 > http://162.55.220.72:5005/get_method
  
 В параметрах запроса указываем
@@ -75,7 +75,7 @@ age|50
 
 >http://162.55.220.72:5005/user_info_3
 
-Также важно отметить, что здесь мы передаем данные запроса через **Body > form-data**. В соответствующей вкладке указываем:
+Также важно отметить, что здесь данные запроса передаются через **Body > form-data**. В соответствующей вкладке:
 Key|Value
 |----|----|
 name|Anna
@@ -122,7 +122,7 @@ salary|500
               'daily_food': weight * 0.012,
               'daily_sleep': weight * 2.5}
 
-Отправим этот запрос методом **GET** в эндпоинт **/object_info_1**
+Запрос отправляется методом **GET** в эндпоинт **/object_info_1**
 
 В параметрах 
 
@@ -166,7 +166,7 @@ http://162.55.220.72:5005/object_info_1?name=Kevin&age=40&weight=100
                          'u_salary_5_years': salary * 4.2}
               }
               
-Отправим этот запрос методом **GET** в эндпоинт **/object_info_2**
+Запрос отправляется методом **GET** в эндпоинт **/object_info_2**
 
 В параметрах 
 
@@ -221,7 +221,7 @@ http://162.55.220.72:5005/object_info_2?name=Ivan&age=35&salary=1000
                          'u_salary_1_5_year': salary * 4}
               }
 
-Отправим этот запрос методом **GET** в эндпоинт **/object_info_3**
+Запрос отправляется методом **GET** в эндпоинт **/object_info_3**
 
 В параметрах 
 
@@ -282,6 +282,30 @@ http://162.55.220.72:5005/object_info_3?name=Alexander&age=30&salary=1200
               'age': int(age),
               'salary': [salary, str(salary * 2), str(salary * 3)]}
 
+Запрос отправляется методом **GET** в эндпоинт **/object_info_4**
+
+В параметрах 
+
+Key|Value
+|----|----|
+name|Pavel
+age|25
+salary|700
+
+http://162.55.220.72:5005/object_info_4?name=Pavel&age=25&salary=700
+
+>Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
+
+    {
+        "age": 25,
+        "name": "Pavel",
+        "salary": [
+            700,
+            "1400",
+            "2100"
+        ]
+    }
+
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81ols3Q-uqrhMFcDRAT9tTe4FFGqzLrNl6EE1uWAQMvp4OU5HhhbqXjnLivfRAgJAdUZ344XTCyM-cGJxNWjEmfWylWhIg=s2560)
 ----
 
@@ -305,6 +329,36 @@ http://162.55.220.72:5005/object_info_3?name=Alexander&age=30&salary=1200
                          'u_age': age,
                          'u_salary_5_years': salary * 4.2}
               }
+
+Запрос отправляется методом **POST** в эндпоинт **/user_info_2**
+
+Тут также как в задании EP_2, данные запроса передаются через **Body > form-data**. В соответствующей вкладке указано:
+Key|Value
+|----|----|
+name|Dmitry
+age|45
+salary|100
+
+http://162.55.220.72:5005/user_info_2
+
+>Результатом будет ответ сервера с статус кодом **200 OK**. Ответ сервера совпадает с указанным в задании и выглядит так:
+>
+    {
+        "person": {
+            "u_age": 45,
+            "u_name": [
+                "Dmitry",
+                100,
+                45
+            ],
+            "u_salary_5_years": 420.0
+        },
+        "qa_salary_after_1.5_year": 330.0,
+        "qa_salary_after_12_months": 270.0,
+        "qa_salary_after_3.5_years": 380.0,
+        "qa_salary_after_6_months": 200,
+        "start_qa_salary": 100
+    }
 
 ![](https://lh3.googleusercontent.com/drive-viewer/AFGJ81q01CYsr1o40kNjTR4jLLfsCjiQ43R-QbHCrKZNFHjC5_ETZFDLcerSMU-fOxdv2SOrha_yEYSy5yGE4mBSAmsN6G1z8Q=s2560)
 ----
